@@ -1,7 +1,12 @@
-import './App.scss';
+import "./App.scss";
 
 function App() {
-  return <> </>;
+  return (
+    <>
+      {" "}
+      <h1>опачки</h1>
+    </>
+  );
 }
 
 export default App;
