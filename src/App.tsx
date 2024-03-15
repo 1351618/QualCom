@@ -3,8 +3,10 @@ import "./App.scss";
 function App() {
   return (
     <>
-      {" "}
-      <h1>опачки</h1>
+      <header className="header">
+        <div className="logo">logo</div>
+        <div className="nav">навигационные штучки</div>
+      </header>
     </>
   );
 }
