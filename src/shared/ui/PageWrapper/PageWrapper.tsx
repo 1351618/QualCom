@@ -4,7 +4,7 @@ import clsx from 'clsx';
 import { useTheme } from '../../../app/providers/themeProvider/lib/useTheme';
 
 export const PageWrapper = ({ children }: { children: ReactNode }) => {
-  const { theme, changeTheme } = useTheme();
+  const { changeTheme } = useTheme();
 
   return (
     <div className={clsx(cls.cls, cls.app)}>
