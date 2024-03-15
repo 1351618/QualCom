@@ -1,19 +1,29 @@
+@import './themes/dark.scss';
+@import './themes/light.scss';
+
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
+
 body {
   display: flex;
   flex-direction: column;
   align-items: center;
-  background-color: #dbdeaf;
+  background-color: var(--backgroundColor);
+  transition: background 1s ease;
 }
+
+
+
+
+
 .header {
   background-color: #b2f37d;
   height: 70px;
-  width: 1400px;
   max-width: 1400px;
+  width: 1400px;
   display: flex;
   align-items: center;
   justify-content: space-between;
