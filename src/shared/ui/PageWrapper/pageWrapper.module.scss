@@ -7,8 +7,7 @@
 .app {
   border: 2px solid #eeff00;
   max-width: 1000px;
-  min-width: 1000px;
-  width: min(100%, 1000px);
+  width: 100%;
   box-sizing: border-box;
   min-height: 100vh;
   display: flex;
