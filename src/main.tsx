@@ -5,15 +5,12 @@ import { RouterProvider, createBrowserRouter } from 'react-router-dom';
 import { routeList } from './shared/config/route/routeList.tsx';
 import { ThemeProvider } from './app/providers/themeProvider/ui/ThemeProvider.tsx';
 
-const router = createBrowserRouter(routeList,{basename: '/'})
-
-
+const router = createBrowserRouter(routeList, { basename: '/' });
 
 ReactDOM.createRoot(document.getElementById('root')!).render(
   <React.StrictMode>
     <ThemeProvider>
-
-  <RouterProvider router={router} />
+      <RouterProvider router={router} />
     </ThemeProvider>
   </React.StrictMode>
 );
