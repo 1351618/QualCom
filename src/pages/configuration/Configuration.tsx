@@ -1,4 +1,3 @@
-import React from "react";
 import { PageWrapper } from "../../shared/ui/PageWrapper/PageWrapper";
 
 export const Configuration = () => {
