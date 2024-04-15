@@ -20,4 +20,8 @@ export const navItems: navItemsType[] = [
     to: "/configuration",
     text: "configuration",
   },
+  {
+    to: "/partners",
+    text: "partners",
+  },
 ];

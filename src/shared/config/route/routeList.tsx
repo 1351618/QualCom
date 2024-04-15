@@ -4,6 +4,7 @@ import { Home } from "../../../pages/home/Home";
 import { PrivacyPolicy } from "../../../pages/privacyPolicy/PrivacyPolicy";
 import { Configuration } from "../../../pages/configuration/Configuration";
 import { Suspense } from "react";
+import { Partners } from "../../../pages/partners/Partners";
 
 export const routeList: RouteObject[] = [
   {
@@ -28,12 +29,16 @@ export const routeList: RouteObject[] = [
     element: <Configuration />,
   },
   {
+    path: "/partners",
+    element: <Partners />,
+  },
+  {
     path: "/*",
     element: (() => {
       return (
         <div>
           <p>404 - страница не найдена</p>
-          <a href='/'>&larr; вернуться на главную</a>
+          <a href="/">&larr; вернуться на главную</a>
         </div>
       );
     })(),

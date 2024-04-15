@@ -4,8 +4,8 @@ const DropDownListData = {
   component: "корпус",
   componentList: [
     { id: "01", product: "SFF 300W", price: 500 },
-    { id: "01", product: "MATX 400W", price: 500 },
-    { id: "01", product: "ATX 450W", price: 500 },
+    { id: "02", product: "MATX 400W", price: 500 },
+    { id: "03", product: "ATX 450W", price: 500 },
   ],
 };
 
