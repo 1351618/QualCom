@@ -14,7 +14,7 @@ export const routeList: RouteObject[] = [
     path: "/about",
     element: (
       <Suspense fallback={<></>}>
-        <About />,
+        <About />
       </Suspense>
     ),
   },
