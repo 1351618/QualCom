@@ -1,5 +1,5 @@
-import { Outlet } from 'react-router-dom';
-import { PageWrapper } from '../../shared/ui/PageWrapper/PageWrapper';
+import { Outlet } from "react-router-dom";
+import { PageWrapper } from "../../../shared/ui/PageWrapper/PageWrapper";
 
 export const PrivacyPolicy = () => {
   return (

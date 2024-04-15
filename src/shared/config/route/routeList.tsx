@@ -1,10 +1,9 @@
 import { RouteObject } from "react-router-dom";
-import { About } from "../../../pages/about/About";
-import { Home } from "../../../pages/home/Home";
-import { PrivacyPolicy } from "../../../pages/privacyPolicy/PrivacyPolicy";
+import { About } from "../../../pages/PageAbout/ui/About";
+import { Home } from "../../../pages/PageHome/ui/Home";
+import { PrivacyPolicy } from "../../../pages/PagePrivacyPolicy/ui/PrivacyPolicy";
 import { Configuration } from "../../../pages/configuration/Configuration";
-import { Suspense } from "react";
-import { Partners } from "../../../pages/partners/Partners";
+import { Partners } from "../../../pages/PagePartners/ui/Partners";
 
 export const routeList: RouteObject[] = [
   {
@@ -13,13 +12,8 @@ export const routeList: RouteObject[] = [
   },
   {
     path: "/about",
-    element: (
-      <Suspense fallback={<></>}>
-        <About />
-      </Suspense>
-    ),
+    element: <About />,
   },
-
   {
     path: "/about/privacy_policy",
     element: <PrivacyPolicy />,
@@ -38,7 +32,7 @@ export const routeList: RouteObject[] = [
       return (
         <div>
           <p>404 - страница не найдена</p>
-          <a href="/">&larr; вернуться на главную</a>
+          <a href='/'>&larr; вернуться на главную</a>
         </div>
       );
     })(),

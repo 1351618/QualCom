@@ -1,4 +1,4 @@
-import { PageWrapper } from "../../shared/ui/PageWrapper/PageWrapper";
+import { PageWrapper } from "../../../shared/ui/PageWrapper/PageWrapper";
 
 export const Home = () => {
   return (
