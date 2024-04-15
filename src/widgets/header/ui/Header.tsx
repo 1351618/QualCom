@@ -4,6 +4,7 @@ import cls from "./header.module.scss";
 import { useEffect, useState } from "react";
 import { NavHeader } from "../../navHeader/ui/NavHeader";
 import MenuBtnSvg from "./menu_btn.svg";
+import { NavLink } from "react-router-dom";
 
 export const Header = () => {
   const { t, i18n } = useTranslation();
@@ -42,7 +43,7 @@ export const Header = () => {
   return (
     <header className={cls.header}>
       <div className={cls.headerLogo}>
-        <a href="/">Logo</a>
+        <NavLink to='/'>Logo</NavLink>
       </div>
 
       <div className={`${cls.headerDesktop}  ${isMobileWind ? cls.hide : ""}`}>
@@ -54,7 +55,7 @@ export const Header = () => {
             setMobileMenu(true);
           }}
         >
-          <img src={MenuBtnSvg} alt="" />
+          <img src={MenuBtnSvg} alt='' />
         </button>
       </div>
       <div className={cls.headerBacLang}>
@@ -69,12 +70,11 @@ export const Header = () => {
 
         <button onClick={changeTheme}>{t("Change theme")}</button>
       </div>
-      <div
-        className={`${cls.mobileMenu} ${isMobileMenu ? "" : cls.hide}`}
-        onClick={handleContainerClick}
-      >
-        <NavHeader />
-      </div>
+      {isMobileMenu && (
+        <div className={`${cls.mobileMenu}`} onClick={handleContainerClick}>
+          <NavHeader />
+        </div>
+      )}
     </header>
   );
 };

@@ -4,6 +4,7 @@
   padding-left: 20px;
   padding-right: 20px;
 }
+
 .app {
   border: 2px solid #eeff00;
   max-width: var(--maxContWidth);
@@ -13,15 +14,6 @@
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-}
-
-.header__inner {
-  // min-height: 100px;
-  //   display: flex;
-  //   justify-content: space-between;
-  //   align-items: center;
-
-  //   background-color: var(--backgroundColor);
 }
 
 .footer__inner {
