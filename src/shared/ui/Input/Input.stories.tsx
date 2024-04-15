@@ -6,7 +6,15 @@ const meta: Meta<typeof Input> = {
   component: Input,
 };
 type Story = StoryObj<typeof Input>;
+
 export const Normal: Story = {
   args: {},
 };
+
+export const CheckBox: Story = {
+  args: {
+    type: "checkbox",
+  },
+};
+
 export default meta;
