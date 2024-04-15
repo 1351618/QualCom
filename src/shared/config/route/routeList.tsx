@@ -3,6 +3,7 @@ import { About } from "../../../pages/about/About";
 import { Home } from "../../../pages/home/Home";
 import { PrivacyPolicy } from "../../../pages/privacyPolicy/PrivacyPolicy";
 import { Configuration } from "../../../pages/configuration/Configuration";
+import { Suspense } from "react";
 
 export const routeList: RouteObject[] = [
   {
@@ -11,7 +12,11 @@ export const routeList: RouteObject[] = [
   },
   {
     path: "/about",
-    element: <About />,
+    element: (
+      <Suspense fallback={<></>}>
+        <About />,
+      </Suspense>
+    ),
   },
 
   {
