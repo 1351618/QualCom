@@ -1,5 +1,10 @@
 import React from "react";
+import { PageWrapper } from "../../shared/ui/PageWrapper/PageWrapper";
 
 export const Configuration = () => {
-  return <div>Configurator</div>;
+  return (
+    <PageWrapper>
+      <div>Configurator</div>;
+    </PageWrapper>
+  );
 };

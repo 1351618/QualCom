@@ -1,11 +1,20 @@
-export const navItems = [
+type navItemsType = {
+  to: string;
+  text: string;
+};
+
+export const navItems: navItemsType[] = [
+  {
+    to: "/",
+    text: "Home",
+  },
   {
     to: "/about",
     text: "about",
   },
   {
-    to: "/partners",
-    text: "partners",
+    to: "/about/privacy_policy",
+    text: "privacy policy",
   },
   {
     to: "/configuration",

@@ -9,8 +9,8 @@ export const PageWrapper = ({ children }: { children: ReactNode }) => {
       <header className={cls.header__inner}>
         <Header />
       </header>
-      <main className="main">
-        <div className="Home__inner">{children}</div>
+      <main className='main'>
+        <div className='Home__inner'>{children}</div>
       </main>
       <div>
         <Footer />
